@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        //Nombre
+        <!--<TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_weight=""
+            android:text="Nombre"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Titulo app
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="REGISTRO"
+            android:textSize="40dp"
+            android:textColor="#000"
+            android:textAlignment="center"/>
+
+        //Campo nombre
+        <EditText
+            android:id="@+id/etNombre"
+            android:hint="Nombre"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"/>
+
+        //Apellido
+        <!--<TextView
+            android:id="@+id/apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Campo Apellido
+        <EditText
+            android:id="@+id/etApellido"
+            android:hint="Apellido"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"/>
+
+        //Correo
+       <!-- <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Campo Correo
+        <EditText
+            android:id="@+id/etCorreo"
+            android:hint="Correo"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:inputType="textEmailAddress"/>
+
+        //Telefono
+        <!--<TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Campo Telefono
+        <EditText
+            android:id="@+id/etTelefono"
+            android:hint="Telefono"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:inputType="number"/>
+
+        //UserName
+        <!--<TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Campo UserName
+        <EditText
+            android:id="@+id/etUserName"
+            android:hint="Username"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"/>
+
+        //Pass
+        <!--<TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginLeft="10dp"/>-->
+
+        //Campo Pass
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"/>
+
+    <RadioGroup
+            android:id="@+id/rGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        //rdHombre
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"/>
+
+        //rdMujer
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:layout_gravity="center_horizontal"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        //Registro
+        <Button
+            android:id="@+id/bRegistro"
+            android:text="Registro"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:onClick="bRegistroPuls"/>
+        //Registro
+        <Button
+            android:id="@+id/bCancelar"
+            android:text="Cancelar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:onClick="bCancelarPuls"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+

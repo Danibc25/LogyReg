@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+//Titulo app
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Datos"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:textAlignment="center"/>
+//Nombre
+<TextView
+    android:id="@+id/txtNombre"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:textSize="20dp"
+    android:text="Nombre"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content" />
+
+
+
+
+//Apellido
+<TextView
+    android:id="@+id/txtApellido"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="20dp"
+    android:text="Apellido"
+    android:layout_marginLeft="10dp"/>
+
+
+//Correo
+<TextView
+     android:id="@+id/txtCorreo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:textSize="20dp"
+     android:text="Correo"
+     android:layout_marginLeft="10dp"/>
+
+
+//Telefono
+<TextView
+    android:id="@+id/txtTelefono"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="20dp"
+    android:text="Telefono"
+    android:layout_marginLeft="10dp"/>
+
+
+
+//UserName
+<TextView
+    android:id="@+id/txtUserName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="20dp"
+    android:text="UserName"
+    android:layout_marginLeft="10dp"/>
+
+//Sexo
+<TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:text="Sexo"
+        android:layout_marginLeft="10dp"/>
+//Pass
+<!--<TextView
+    android:id="@+id/password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:layout_marginLeft="10dp"/>-->
+
+
+
+
+
+</LinearLayout>
