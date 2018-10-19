@@ -79,7 +79,7 @@ public class Usuario implements Parcelable {
     }
 
     protected Usuario(Parcel in) {
-        //id = in.readInt();
+        userName= in.readString();//Aqui estaba el fallo
         nom = in.readString();
         cognoms = in.readString();
         email = in.readString();

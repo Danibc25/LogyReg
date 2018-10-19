@@ -26,15 +26,16 @@ public class LogIn extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        Usuarios = new ArrayList<Usuario>();
+
         etUserName = (EditText) findViewById(R.id.etUserName);
         etPassword = (EditText) findViewById(R.id.etPassword);
         bLogin = (Button)findViewById(R.id.bLogin);
         bReg = (Button)findViewById(R.id.bReg);
 
 
-        Usuarios = new ArrayList<Usuario>();
 
-        Usuario u1 = new Usuario("Manel", "Viel", "mviel@florida-uni.es", "1234", "654321098", "1");
+        Usuario u1 = new Usuario("Manel", "Viel", "mviel@florida-uni.es", "654321098", "1234", "1");
         Usuarios.add(u1);
 
     }
@@ -68,13 +69,13 @@ public class LogIn extends Activity {
 
         boolean valido = false;
 
-        Iterator<Usuario> it =Usuarios.iterator();
+        Iterator<Usuario> it = Usuarios.iterator();
 
         while (it.hasNext()){
 
-            Usuario us1 =(Usuario) it.next();
+            Usuario us1 = (Usuario) it.next();
 
-                if(us1.getUserName().compareTo(uName)==0 && us1.getPassword().compareTo(uPass)==0){
+                if(us1.getUserName().compareTo(uName) == 0 && us1.getPassword().compareTo(uPass) == 0){
                     valido = true;
                 }
         }
@@ -108,9 +109,11 @@ public class LogIn extends Activity {
 
 
             if(resultCode==RESULT_OK){ //Posem en Majuscules el nom
-                Usuario us1 = i.getExtras().getParcelable("User");
+
+                Usuario us1 = i.getExtras().getParcelable("Usuario");
                 Usuarios.add(us1);
 
+                us1.getUserName();
             }
 
         }}

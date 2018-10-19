@@ -43,7 +43,7 @@ public class Registro extends Activity {
 
         if (usuario1 != null) {
             Intent i = new Intent();
-            i.putExtra("User", usuario1);
+            i.putExtra("Usuario", usuario1);
             setResult(RESULT_OK, i);
             finish();
         }
